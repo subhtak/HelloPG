@@ -1,0 +1,54 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: white !important;
+}
+.container {width: 100% !important}
+@media (min-width: 1200px) {
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 100% !important;
+}}
+.navbar-brand {
+    border-top: 0.32rem solid rgb(0,128,0,.5);
+    border-bottom: 0.32rem solid rgb(0,128,0,.5);
+    font-size: 20px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+.nav li > a {
+    color: #636b6f;
+    padding: 0 22px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content {
+    padding: 2rem 1rem;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.welcome-msg {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+}
+.head-border {
+    border-top: 0.32rem solid rgb(0,128,0,.5);
+    border-bottom: 0.32rem solid rgb(0,128,0,.5);
+    font-size: 50px;
+}
+span.delete-box {
+    float: right;
+}
