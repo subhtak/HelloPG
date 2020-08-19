@@ -73288,9 +73288,9 @@ var CreateRent = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "Rs.12000/- (single room)"
       }, "Rs.12000/- (single room)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Rs.12000/- (twin sharing)"
+        value: "Rs.9000/- (twin sharing)"
       }, "Rs.9000/- (twin sharing)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: "Rs.12000/- (three sharing)"
+        value: "Rs.6000/- (three sharing)"
       }, "Rs.6000/- (three sharing)")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group row"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {

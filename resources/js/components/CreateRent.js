@@ -93,8 +93,8 @@ class CreateRent extends Component {
                     onChange={this.handleChange}>
                     <option value=""></option>
                     <option value="Rs.12000/- (single room)">Rs.12000/- (single room)</option>
-                    <option value="Rs.12000/- (twin sharing)">Rs.9000/- (twin sharing)</option>
-                    <option value="Rs.12000/- (three sharing)">Rs.6000/- (three sharing)</option>
+                    <option value="Rs.9000/- (twin sharing)">Rs.9000/- (twin sharing)</option>
+                    <option value="Rs.6000/- (three sharing)">Rs.6000/- (three sharing)</option>
                   </select>
                 </div>
             </div>
