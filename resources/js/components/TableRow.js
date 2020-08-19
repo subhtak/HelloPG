@@ -37,12 +37,12 @@ class TableRow extends Component {
           <td>
             {this.props.obj.mobile}
           </td>
-          <td>
+          {/* <td>
             {this.props.obj.pan}
           </td>
           <td>
             {this.props.obj.aadhar}
-          </td>
+          </td> */}
           <td>
             {this.props.obj.building}
           </td>
@@ -58,7 +58,7 @@ class TableRow extends Component {
           <td>
           <form onSubmit={this.handleSubmit}>
             <Link to={"edit/"+this.props.obj.id} className="btn btn-primary">Edit</Link>
-           <span className='delete-box'><input type="submit" value="Delete" className="btn btn-danger"/></span>
+            <span className='delete-box'><input type="submit" value="Delete" className="btn btn-danger"/></span>
          </form>
           </td>
         </tr>

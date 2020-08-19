@@ -6,7 +6,7 @@ import MyGlobleSetting from './MyGlobleSetting';
 class DisplayTenant extends Component {
   constructor(props) {
        super(props);
-       this.state = {value: '', tenants: ''};
+       this.state = {tenants: ''};
      }
      componentDidMount(){
        axios.get(MyGlobleSetting.url + '/api/tenants')
@@ -30,8 +30,6 @@ class DisplayTenant extends Component {
        }
      }
      
-
-
   render(){
       //console.log(this.tabRow());
       const divStyle={
@@ -49,7 +47,7 @@ class DisplayTenant extends Component {
         <div className="row">
           <div className="col-md-10"></div>
           <div className="col-md-2 text-right">
-            <Link to="/add-item" className="btn btn-success">Create Tenant</Link>
+            <Link to="/add-item" className="btn btn-success">Add New Tenant</Link>
           </div>
         </div><br />
 
@@ -59,10 +57,10 @@ class DisplayTenant extends Component {
               <tr>
               <th>ID</th>
                   <th>Tenant Name</th>
-                  <th width="100px">Address</th>
+                  <th>Address</th>
                   <th>Mobiile No.</th>
-                  <th>PAN No.</th>
-                  <th>Aadhar No.</th>
+                  {/* <th>PAN No.</th>
+                  <th>Aadhar No.</th> */}
                   <th>Building Name</th>
                   <th>Room No.</th>
                   <th>Allocated on</th>

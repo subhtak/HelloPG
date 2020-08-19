@@ -10970,3 +10970,7 @@ span.delete-box {
   float: right;
 }
 
+.edit-box {
+  margin-left: 9px;
+}
+

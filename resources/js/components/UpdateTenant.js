@@ -106,6 +106,9 @@ class UpdateTenant extends Component {
     });
   }
   render(){
+    const toInputUppercase = e => {
+      e.target.value = ("" + e.target.value).toUpperCase();
+    };
     return (
       <div>
         <h1>Update Tenant</h1>
@@ -140,14 +143,14 @@ class UpdateTenant extends Component {
             <div className="form-group row">
                 <label htmlFor="pan" className="col-sm-2 col-form-label">PAN Number</label>
                 <div className="col-sm-2">
-                    <input type="text" className="form-control" id="pan" 
+                    <input type="text" className="form-control" id="pan" onInput={toInputUppercase}
                     value={this.state.pan} onChange={this.handleChangePan} />
                 </div>
             </div>
             <div className="form-group row">
                 <label htmlFor="aadhar" className="col-sm-2 col-form-label">Aadhar Number</label>
                 <div className="col-sm-3">
-                    <input type="text" className="form-control" id="aadhar" 
+                    <input type="text" className="form-control" id="aadhar" onInput={toInputUppercase}
                     value={this.state.aadhar} onChange={this.handleChangeAadhar} />
                 </div>
             </div>
@@ -155,7 +158,7 @@ class UpdateTenant extends Component {
                 <label htmlFor="building" className="col-sm-2 col-form-label">Select PG Building</label>
                 <div className="col-sm-2">
                   <select className="form-control" id="building" 
-                    selectedValue={this.state.building}
+                    selectedvalue={this.state.building}
                     value={this.state.building} onChange={this.handleChangeBuilding}>
                     <option value=""></option>
                     <option value="B1">B1</option>
@@ -170,7 +173,7 @@ class UpdateTenant extends Component {
                 <label htmlFor="room" className="col-sm-2 col-form-label">Select Room</label>
                 <div className="col-sm-1">
                   <select className="form-control" id="room" 
-                    selectedValue={this.state.room}
+                    selectedvalue={this.state.room}
                     value={this.state.room} onChange={this.handleChangeRoom}>
                     <option value=""></option>
                     <option value="1">1</option>

@@ -16,8 +16,10 @@ class Master extends Component {
             </div>
             <ul className="nav">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="add-item">Create Tenant</Link></li>
-              <li><Link to="display-item">Tenants</Link></li>
+              <li><Link to="add-item">Add Tenant</Link></li>
+              <li><Link to="display-item">All Tenants</Link></li>
+              <li><Link to="payment-list">Rent Collected</Link></li>
+              <li><Link to="new-payment">New Payment</Link></li>
             </ul>
           </div>
         </nav>    

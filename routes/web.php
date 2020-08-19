@@ -25,3 +25,9 @@ Route::get('/display-item', function () {
 Route::get('/edit/{id}', function ($id) {
     return view('home');
 });
+Route::get('/new-payment', function () {
+    return view('home');
+});
+Route::get('/payment-list', function () {
+    return view('home');
+});

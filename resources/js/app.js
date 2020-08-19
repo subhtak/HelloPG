@@ -20,10 +20,11 @@ import { Router, Route, browserHistory } from 'react-router';
 
 
 import Master from './components/Master';
-import Home from './components/Home';
 import CreateTenant from './components/CreateTenant';
 import DisplayTenant from './components/DisplayTenant';
 import UpdateTenant from './components/UpdateTenant';
+import CreateRent from './components/CreateRent';
+import DisplayRent from './components/DisplayRent';
 
 render(
     <Router history={browserHistory}>
@@ -31,6 +32,8 @@ render(
           <Route path="/add-item" component={CreateTenant} />
           <Route path="/display-item" component={DisplayTenant} />
           <Route path="/edit/:id" component={UpdateTenant} />
+          <Route path="/payment-list" component={DisplayRent} />
+          <Route path="/new-payment" component={CreateRent} />
         </Route>
       </Router>,
           document.getElementById('pg-app'));

@@ -15,7 +15,6 @@ class CreateTenant extends Component {
   }
   handleChange(event) {
     let input = this.state.input;
-  
     input[event.target.name] = event.target.value;
     this.setState({
       input
@@ -33,7 +32,6 @@ class CreateTenant extends Component {
       input["building"] = "";
       input["room"] = "";
       input["date_of_coming"] = "";
-      input["date_of_vacating"] = "";
       this.setState({input:input});
       //console.log(this.state.input);
 
@@ -83,7 +81,7 @@ class CreateTenant extends Component {
       };
     return (
     <div>
-        <h1>Create Tenant</h1>
+        <h1>Add New Tenant</h1>
         <form className='content' onSubmit={this.handleSubmit}>
             <div className="form-group row">
                 <label htmlFor="name" className="col-sm-2 col-form-label">Tenant Name</label>
@@ -155,13 +153,6 @@ class CreateTenant extends Component {
                     <input type="date" className="form-control" name="date_of_coming" onChange={this.handleChange} />
                 </div>
             </div>
-            <div className="form-group row">
-                <label htmlFor="date_of_vacating" className="col-sm-2 col-form-label">Vacated Date</label>
-                <div className="col-sm-2">
-                    <input type="date" className="form-control" name="date_of_vacating" onChange={this.handleChange} />
-                </div>
-            </div>
-
             <div className="pt-4 form-group">
               <button className="btn btn-primary">Add Tenant</button>
             </div>
